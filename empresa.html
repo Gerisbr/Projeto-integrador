@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GR Futuro Tec</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+
+
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .cabecalho{
+            background: linear-gradient(320deg,#323536,#1d1d22,#05060e,#16171f,#120f5f,rgb(25, 15, 116),#000000);
+        }
+        .box-logo{
+            max-width: 1200px;
+        }
+        .titulo{
+            display: flex;
+            align-items: center;
+        }
+        .menu ul{
+            display: flex;
+            list-style: none;
+        }
+        .item-menu{
+            padding: 30px;
+            display: inline-block;
+            color: #7799d8;
+        }
+        .item-menu:hover {
+            color: rgb(255, 255, 255);
+            background-color: #008e98;;
+        }
+        .box-sobre-nos {
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 50px;
+
+        }
+
+        .texto-representante {
+            background-color: #000607;
+            text-align: center;
+            color: white;
+            text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+            font-size: 30px;
+        }
+
+        .computadores-info {
+            background-color: #000002;
+            color: white;
+            text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .gdoor-pro {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            padding: 15px;
+
+        }
+
+        .gdoor-gfood {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            padding: 15px;
+
+        }
+
+        .gdoor-slin {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            padding: 15px;
+
+        }
+
+        .gdoor-pro-txt {
+            padding: 15px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .gdoor-gfood-txt {
+            padding: 15px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .gdoor-slin-txt {
+            padding: 15px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .logo-facebook {
+            border-radius: 10px;
+        }
+
+        .logo-facebook :hover {
+            text-decoration-color: #ffffff;
+            color: rgb(255, 255, 255);
+        }
+
+        .slider {
+            display: block;
+            height: 400px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .slider li {
+            list-style: none;
+            position: absolute;
+        }
+
+        .slider img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .slider label {
+            background-color: #ffffff;
+            bottom: 10px;
+            cursor: pointer;
+            display: block;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+            z-index: 10;
+        }
+
+        .slider li:nth-child(1) label {
+            left: 10px;
+        }
+
+        .slider li:nth-child(2) label {
+            left: 40px;
+        }
+
+        .slider li:nth-child(3) label {
+            left: 70px;
+        }
+
+        .slider li:nth-child(4) label {
+            left: 100px;
+        }
+
+        .slider li:nth-child(5) label {
+            left: 130px;
+        }
+
+        .slider li:nth-child(6) label {
+            left: 160px;
+        }
+
+        .slider img {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .slider li input:checked~img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <!--cabeçalho do site-->
+    <header class="cabecalho">
+            <div class="box-logo">
+                <div class="titulo">
+                    <img src="imagens/PC3.png">
+                    <p class="nome">GR FUTURO TEC</p>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html" class="item-menu">PAGINA INICIAL</a></li>
+                        
+                        <li><a href="notbook.html" class="item-menu">NOTEBOOK</a></li>
+                        <li><a href="computadores.html" class="item-menu">COMPUTADORES</a></li>
+                        <li><a href="cliente-fidelidade.html" class="item-menu">CLIENTE FIDELIDADE</a></li>
+                        <li><a href="solucoes.html" class="item-menu">SOLUÇÕES</a></li>
+                        <li><a href="empresa.html" class="item-menu">A EMPRESA</a></li>
+                        <li><a href="contato.html" class="item-menu">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="texto-representante">
+        <br>
+        <br>
+        <p>GR FUTURO TEC gerencia o departamento de TI de sua empresa, garantindo a sua estabilidade, satisfação e a melhoria contínua do desempenho de seus equipamentos.
+            Com mais de 10 anos de experiência e profissionais certificados atuamos na manutenção, suporte e vendas de computadores, notebooks, tablets e servidores.
+            
+            </p>
+    </div>
+    <div class="box-sobre-nos">
+        <div class="sobre-nos">
+            <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="imagens/slaid/Banner-1.jpg" width="2000" height="700" />
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="imagens/slaid/banner-revenda-gdoor2.jpg" width="2000" height="700" />
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="imagens/slaid/gdoor-pro-2017-nf-e-ecf-sintegra-frente-ca4.jpg" width="2000" height="700" />
+                </li>
+                <li>
+                    <input type="radio" id="slide4" name="slide">
+                    <label for="slide4"></label>
+                    <img src="imagens/slaid/gdoor-programa-paf-ecf-nfc-e-cf-e-sat-nfs-e-5.jpg" width="2000" height="700" />
+                </li>
+                <li>
+                    <input type="radio" id="slide5" name="slide">
+                    <label for="slide5"></label>
+                    <img src="imagens/slaid/gdoor-slim-2018-emissor-de-nota-fiscal-eletrnica-nf-e-6.jpg" width="2000" height="700" />
+                </li>
+                <li>
+                    <input type="radio" id="slide6" name="slide">
+                    <label for="slide6"></label>
+                    <img src="imagens/slaid/or servoco.jpg" width="2000"
+                        height="700" />
+                </li>
+            </ul>
+        </div>
+        <div class="gdoor-pro">
+            <div>
+                <img src="imagens/gdoor.jpg">
+            </div>
+            <div class="gdoor-pro-txt">
+                <p>NOSSA MISSÃO
+                    <p>Ser sempre referência em serviços de tecnologia com qualidade agregando valor e o continuo crescimento aos negócios de nossos clientes e colaboradores.</p>
+            </div>
+        </div>
+        <div class="gdoor-gfood">
+            <div>
+                <img src="imagens/gfood.jpg">
+            </div>
+            <div class="gdoor-gfood-txt">
+                <p>NOSSA VISÃO
+                    <p> Realizar a satisfação e o sucesso de nossos clientes através da estrutura de TI promovendo o aumento da sua qualidade e a redução de custos com tecnologia aliado a serviços e produtos de qualidade e assim promovendo o retorno de seus investimentos.</p>
+
+            </div>
+
+        </div>
+        <div class="gdoor-slin">
+            <div>
+                <img src="imagens/slim 3 pq-500x500.jpg">
+            </div>
+            <div class="gdoor-slin-txt">
+                <p> NOSSOS VALORES
+                    <p>Ética e transparência, qualidade em tudo o que faz, reconhecimento e incentivo, respeito a nossos colaboradoes e a busca constante pela excelência e a inovação de nossos serviços.
+            </div>
+        </div>
+    </div>
+    <div class="computadores-info">
+        <img src="imagens/PC.jpg">
+        <p>Faça um orçamento online com o nosso time de especialistas.</p>
+        <p> entre contato agora mesmo.</p>
+        <br>
+    </div>
+    </main>
+
+    <!--Rodape-->
+</div>
+<div class="rodape-contato">
+    <div class="rodape-contato-texto">
+        <p>ONDE ESTAMOS</p>
+        <p>Residencial : Rua Alceus Alves  n°280</p>
+        <p>Mãtão-Sumaré</p>
+    </div>
+    <div class="vazia-rodape-contato"></div>
+    <div class="rodape-contato-texto">
+        <p>CONTATO</p>
+        <img src="imagens/baseline-call-24px.svg">
+        <a href="tel:+19-69-98928-79-19" class="email">(19) 98928-7919</a><br>
+        <a href="gerisbr@gmail.com" class="email">gerisbr@gmail.com</a><br>
+    </div>
+</body>
+</html>

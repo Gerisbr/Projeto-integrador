@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GR futuro Tec</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .cabecalho{
+            background: linear-gradient(320deg,#323536,#1d1d22,#05060e,#16171f,#120f5f,rgb(25, 15, 116),#000000);
+        
+        }
+        .box-logo{
+            max-width: 1200px;
+        }
+        .titulo{
+            display: flex;
+            align-items: center;
+        }
+        .menu ul{
+            display: flex;
+            list-style: none;
+        }
+        .item-menu{
+            padding: 30px;
+            display: inline-block;
+            color: #7799d8;
+        }
+        .item-menu:hover {
+            color: rgb(255, 255, 255);
+            background-color: #008e98;
+        }
+        .sobre-nos {
+            background-color: #b5bfc2;
+            text-align: center;
+            width: 60%;
+            font-size: 20px;
+        }
+
+        .sobre-nos-vazia {
+            background-color: #504e4e;
+            width: 20%;
+        }
+
+        .box-sobre-nos {
+            background-color: #474b4c;
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+        }
+
+        .computadores-info {
+            background-color: #3d3d3f;
+            color: white;
+            text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .computadores {
+            text-align: center;
+            width: 40%;
+            height: 30%;
+            text-align: center;
+        }
+
+        .computador-dados {
+            background-color: rgb(250, 249, 249);
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+        }
+
+        .tabela {
+            padding: 15px;
+            width: 100%;
+            margin: 0 auto;
+            border: #e1e1f0 1px solid;
+
+        }
+
+        .tabela th {
+            background-color: #3e3e44;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .tabela td {
+            text-align: center;
+        }
+        .tabela td:nth-child(2) {
+            text-align: left;
+        }
+
+        .tabela tr:nth-child(odd) {
+            background-color: rgb(130, 136, 138);
+        }
+
+        .tabela tr:hover {
+            background-color: rgb(106, 56, 243);
+        }
+        .box-tabela{
+           margin-left: 10px;
+        }
+        .rodape-contato-texto1 {
+            color: rgb(75, 73, 73);
+            text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+            margin: 35px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--cabeçalho do site-->
+    <header class="cabecalho">
+            <div class="box-logo">
+                <div class="titulo">
+                    <img src="imagens/PC3.png">
+                    <p class="nome">GR FUTURO TEC</p>>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html" class="item-menu">PAGINA INICIAL</a></li>
+                        
+                        <li><a href="notbook.html" class="item-menu">NOTEBOOK</a></li>
+                        <li><a href="computadores.html" class="item-menu">COMPUTADORES</a></li>
+                        <li><a href="cliente-fidelidade.html" class="item-menu">CLIENTE FIDELIDADE</a></li>
+                        <li><a href="solucoes.html" class="item-menu">SOLUÇÕES</a></li>
+                        <li><a href="empresa.html" class="item-menu">A EMPRESA</a></li>
+                        <li><a href="contato.html" class="item-menu">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <main>
+        <div class="box-sobre-nos">
+            <div class="sobre-nos-vazia"></div>
+            <div class="sobre-nos">
+                <h2>
+                    <p>Manutenção de Notebooks</p>
+                    <p>Saiba o que podemos fazer pelo seu Notebook</p>
+                </h2>
+                <br>
+                <p>A Pronto Informática é especializada em manutenção de notebooks e está totalmente capacitada para o seu
+                    desafio. Estamos no mercado desde 2010 e sempre em constante capacitação para oferecer a você e sua empresa
+                    sempre o melhor atendimento e soluções em informática.
+                </p>
+                <br>
+            </div>
+            <div class="sobre-nos-vazia"> </div>
+        </div>
+        <div class="computadores-info">
+            <img src="imagens/contrato.png">
+            <p>Faça um orçamento online com o nosso time de especialistas.</p>
+            <p> entre contato agora mesmo.</p>
+            <br>
+        </div>
+        <div class="box-sobre-nos">
+            <div class="sobre-nos-vazia"></div>
+            <div class="sobre-nos">
+                <br>
+                <h2>
+                    <p>Manutenção de Notebooks</p>
+                </h2>
+                <h2>
+                    <p>Traga seu Notebook para a Pronto Informática</p>
+                </h2>
+                <br>
+                <p>Veja algums dos nossos Serviços realizados</p>
+                <br>
+            </div>
+            <div class="sobre-nos-vazia"> </div>
+        </div>
+        <div class="computador-dados">
+            <div>
+                <img src="imagens/PC2.png">
+            </div>
+            <div class="box-tabela">
+                <table class="tabela">
+                    <tr>
+                        <th></th>
+                        <th>Tabele de Preços de Serviços</th>
+                        <th></th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Reparo de placa mãe de notebook</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Reparo em fontes de notebooks</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Troca de teclado de notebooks</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Troca de tela quebrada de notebook</td>
+                        <td>R$ 30,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Instalação e remoção de hardwares e periféricos</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Instalação de programas, jogos e aplicativos</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Limpeza do sistema e formatação com backup</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Recuperação de fotos e dados de HD formatado</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                </table>
+                <p class="rodape-contato-texto1">Atendemos também em domicílio</p>
+            </div>
+        </div>
+    </main>
+
+    <!--Rodape-->
+</div>
+<div class="rodape-contato">
+    <div class="rodape-contato-texto">
+        <p>ONDE ESTAMOS</p>
+        <p>Residencial : Rua Alceus Alves  n°280</p>
+        <p>Mãtão-Sumaré</p>
+    </div>
+    <div class="vazia-rodape-contato"></div>
+    <div class="rodape-contato-texto">
+        <p>CONTATO</p>
+        <img src="imagens/baseline-call-24px.svg">
+        <a href="tel:+19-69-98928-79-19" class="email">(19) 98928-7919</a><br>
+        <a href="gerisbr@gmail.com" class="email">gerisbr@gmail.com</a><br>
+    </div>
+
+</div>
+
+</body>
+
+</html>
